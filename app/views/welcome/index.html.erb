@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Victor and Chad's Wedding!</title>
+</head>
+	<div class="container"></div>
+	<!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<body>
+            <nav class='top-nav'>      
+                  <div class='nav-bar'>
+                      <div class="nav-wrapper">
+                        <div class='container'>
+                              <a href="#" class="brand-logo">Victor and Chad</a>
+                              <% if logged_in? %>
+                                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                      <li><a href=>Where It All Began</a></li>
+                                      <li><a href=>Photos</a></li>
+                                      <li><%= link_to "Sign out", signout_path, method: :delete %></li>
+                                    </ul>
+                              <% else %>
+                                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                      <li><a href='/login'>Log In</a></li>
+                                      <li><a href='/signup'>Sign Up</a></li>
+                                      <li></li>
+                                    </ul>
+                              <% end %>
+                        </div>                        
+                      </div>
+                  </div>
+            </nav>
+
+      <div class='container grey lighten-4'>
+	     <p>stuff about the grooms     
+      </div>
+	<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
+
+

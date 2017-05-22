@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+  <html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+
+  <nav class='top-nav'>      
+                  <div class='nav-bar'>
+                      <div class="nav-wrapper">
+                        <div class='container'>
+                              <a href="#" class="brand-logo">Victor and Chad</a>
+                              <% if logged_in? %>
+                                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                      <li><a href=>Where It All Began</a></li>
+                                      <li><a href=>Photos</a></li>
+                                    </ul>
+                              <% else %>
+                                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                      <li><a href='/login'>Log In</a></li>
+                                      <li><a href='/signup'>Sign Up</a></li>
+                                      <li></li>
+                                    </ul>
+                              <% end %>
+                        </div>                        
+                      </div>
+                  </div>
+            </nav>
+  <div class='container'>
+    <div class='container'>
+      <%= form_for @user do |f| %>
+        <%= f.label :first_name %>
+        <%= f.text_field :first_name %>
+        <%= f.label :last_initial %>
+        <%= f.text_field :last_initial %>
+        <%= f.label 'Victor/Chad' %>
+        <%= f.text_field :v_or_c %>
+        <%= f.label :password %>
+        <%= f.password_field_tag :password %>
+        <%= f.submit 'Sign Up' %>
+      <% end %>
+    </div>
+  </div>
+  </body>
+  </html> 
+
+
+
+
