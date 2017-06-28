@@ -197,7 +197,7 @@ DEPENDENCIES
   jwt
   listen (~> 3.0.5)
   materialize-sass
-  pg
+  pg (~> 0.18)
   pry
   puma (~> 3.0)
   rack-cors
