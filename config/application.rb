@@ -27,7 +27,7 @@ module VictorChadWedding
       end
     end
     
-
+    config.serve_static_assets = true
   end
 end
 
